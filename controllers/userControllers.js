@@ -1,7 +1,7 @@
-import userQuery from "./queries/userQueries.js";
+import userQuery from "../queries/userQueries.js";
 import validator from "validator";
 import bcrypt from "bcryptjs";
-import { generateAccessToken, generateRefreshToken } from "./generateToken.js";
+import { generateAccessToken, generateRefreshToken } from "../generateToken.js";
 
 export const getAllUsers = async (req, res) => {
   try {
